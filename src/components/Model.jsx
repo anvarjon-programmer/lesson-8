@@ -53,7 +53,6 @@ const Model = () => {
                 >
                   Delete
                 </button>
-                {console.log(item)}
                 <button
                   className="btn btn-info"
                   onClick={() => openEditModal(item)}
