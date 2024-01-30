@@ -1,6 +1,30 @@
 .card{
-  margin-top: 50px;
+  margin-top: 10px;
 }
-.bar--wraper{
-  
+
+.bar{
+  width: 100%;
+  padding: 30px 0;
+  background-color: #007bff;
+  margin-bottom: 35px   ;
+}
+.side-bar{
+  display: flex;
+  gap: 10px;
+}
+.card--body{
+  padding: 15px;
+}
+.btn-wraper{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.modal{
+  padding: 25px;
+}
+.select-btn{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

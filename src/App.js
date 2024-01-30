@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
       <div className='bar--wraper '>
       <Bar/>
-        <Routes>
+        <Routes className='rout'>
           <Route path='/brand' element={<Brend/>}/>
           <Route path='/model' element={<Model/>}/>
           <Route path='/product' element={<Product/>}/>

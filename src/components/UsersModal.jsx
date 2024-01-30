@@ -30,15 +30,17 @@ export default function UsersModal({open,toggle,edit}) {
         <ModalBody>
             <form onSubmit={handleSubmit}>
                 <input type="text" defaultValue={edit.name} placeholder='Prodact Name..' className='form-control my-2'/>
-                <input type="number" defaultValue={edit.age} placeholder='Age...' className='form-control my-2'/>
-                <input type="text" defaultValue={edit.address} placeholder='Address...' className='form-control my-2'/>
+                <input type="text" defaultValue={edit.address} placeholder='from which country...' className='form-control my-2'/>
+                <input type="number" defaultValue={edit.age} placeholder='Price...' className='form-control my-2'/>
                 <input type="number" defaultValue={edit.phone} placeholder='Phone...' className='form-control my-2'/>
-                <select onChange={(e) => setSelectData(e.target.value)} name="" id="">
+                <div className="select-btn flex">
+                <button className='btn btn-success'>Add</button>
+                <select onChange={(e) => setSelectData(e.target.value)} name="" id=""  class="form-select" aria-label="Disabled select example">
                     <option value="brand">Brand</option>
                     <option value="model">Model</option>
                     <option value="product">Product</option>
                 </select>
-                <button className='btn btn-success'>Add</button>
+                </div>
             </form>
         </ModalBody>
     </Modal>
